@@ -1,4 +1,3 @@
-```terraform
 ##
 # Terraform Configuration
 ##
@@ -26,4 +25,3 @@ terraform {
 provider "azurerm" {
   features {}
 }
-```

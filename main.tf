@@ -1,4 +1,3 @@
-```terraform
 ## 
 # Local variables
 ##
@@ -24,6 +23,3 @@ resource "azurerm_resource_group" "lab_rg" {
     owner = var.tag_owner
   }
 }
-
-
-```

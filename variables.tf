@@ -1,4 +1,3 @@
-```terraform
 ## 
 # Variables
 ##
@@ -23,4 +22,3 @@ variable "tag_owner" {
   default = "jbf"
 }
 
-```
