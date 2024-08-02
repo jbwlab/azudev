@@ -1,24 +1,9 @@
-## 
-# Variables
-##
-
 variable "location" {
-    type = string
-    default = "westeurope"
+  type        = string
+  description = "The location/region where the resources will be created"
 }
 
-variable "naming_prefix" {
-  type    = string
-  default = "lab"
+variable "tags" {
+  type        = map(string)
+  description = "A map of tags to add to all resources"
 }
-
-variable "tag_environment" {
-  type    = string
-  default = "test"
-}
-
-variable "tag_owner" {
-  type    = string
-  default = "jbf"
-}
-
