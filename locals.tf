@@ -16,6 +16,7 @@ locals {
   cidr_subnets                  = cidrsubnets(local.virtual_network_address_space, local.subnet_new_bits...)
 
   #skip_nsg = ["AzureBastionSubnet", "virtual_machines"]
+  skip_nsg = []
   subnets = { for key, value in var.subnets_and_sizes : key => {
     name             = key
     address_prefixes = [local.cidr_subnets[index(local.subnet_keys, key)]]
