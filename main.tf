@@ -1,3 +1,5 @@
+# https://github.com/Azure-Samples/avm-terraform-labs
+
 resource "random_pet" "unique_name" {
   length    = 2
   separator = "-"
